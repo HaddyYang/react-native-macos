@@ -25,6 +25,10 @@
 #import "RCTTVView.h"
 #endif
 
+#if TARGET_OS_OSX
+#import "RCTCursor.h"
+#endif
+
 #if !TARGET_OS_OSX // TODO(macOS GH#774)
 @implementation RCTConvert (UIAccessibilityTraits)
 
@@ -475,6 +479,7 @@ RCT_EXPORT_VIEW_PROPERTY(onBlur, RCTBubblingEventBlock)
 #if TARGET_OS_OSX // [TODO(macOS GH#774)
 #pragma mark - macOS properties
 
+RCT_EXPORT_VIEW_PROPERTY(cursor, RCTCursor)
 RCT_EXPORT_VIEW_PROPERTY(onDoubleClick, RCTDirectEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(onClick, RCTDirectEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(onMouseEnter, RCTDirectEventBlock)
