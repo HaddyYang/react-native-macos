@@ -343,6 +343,7 @@ class TouchableHighlight extends React.Component<Props, State> {
                 this.props.onPress !== undefined,
             })}
         // macOS]
+        cursor={this.props.cursor}
         tooltip={this.props.tooltip} // TODO(macOS/win GH#774)
         onMouseEnter={this.props.onMouseEnter} // [TODO(macOS/win GH#774)
         onMouseLeave={this.props.onMouseLeave}
