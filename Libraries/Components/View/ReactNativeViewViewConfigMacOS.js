@@ -38,6 +38,7 @@ const ReactNativeViewViewConfigMacOS = {
     acceptsFirstMouse: true,
     acceptsKeyboardFocus: true,
     accessibilityTraits: true,
+    cursor: true,
     draggedTypes: true,
     enableFocusRing: true,
     onBlur: true,
